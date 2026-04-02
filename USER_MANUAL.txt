@@ -1,0 +1,27 @@
+USER MANUAL (ENTERPRISE VERSION)
+
+STEP 1 - Extract
+unzip bank-microservices-git-lab.zip
+cd bank-microservices-git-lab
+
+STEP 2 - Push ke GitHub
+git init
+git add .
+git commit -m "init"
+git remote add origin https://github.com/YOUR-USERNAME/bank-microservices-git-lab.git
+git branch -M main
+git push -u origin main
+
+STEP 3 - Jenkins
+- New Pipeline
+- Use Pipeline from SCM
+- Git URL: repo kamu
+
+STEP 4 - Tambahkan credential:
+ID: sonar-token
+
+STEP 5 - Run pipeline
+
+EXPECTED:
+- Sonar issue muncul
+- Table account & transactions terbentuk
